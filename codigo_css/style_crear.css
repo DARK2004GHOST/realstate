@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para imágenes */
+img {
+    border: 1px; /* Grosor del borde de la imagen */
+    border-radius: 1px; /* Radio de borde para esquinas redondeadas */
+    max-width: 50%; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 50% 5px;
+}
+
+body {
+    font-family: arial, "lato", sans-serif;
+    background-image: url(../imagenes/imagenblanca.jpg);
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilos para el contenedor principal */
+.containero {
+    width: 400px; /* Ancho fijo */
+    height: 600px; /* Altura automática */
+    background-color: rgba(233, 238, 244, 0.877);
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar con transformación */
+    border-radius: 10px; /* Radio de borde para esquinas redondeadas */
+    box-shadow: 3px 3px 5px; /* Sombra */   
+    padding: 20px; /* Relleno interior */
+}
+
+/* Estilos para el título */
+.welcome-heading {
+    font-size: 1.1rem; /* Tamaño de fuente */
+    text-align: center; /* Alinear al centro */
+    text-transform: capitalize; /* Transformar en mayúsculas */
+    color: rgb(91, 129, 241); /* Color de texto */
+}
+
+/* Estilos para las casillas de entrada */
+.inputBox {
+    width: 80%; /* Ancho completo */
+    height: 30px; /* Altura */
+    margin: 5px ; /* Centra horizontalmente las casillas de entrada */
+    margin-bottom: 10px; /* Espacio entre las casillas */
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none; /* Sin contorno al recibir foco */
+    border: none; /* Sin borde */
+    padding-left: 10px; /* Relleno izquierdo */
+  
+}
+
+/* Estilos para el contenedor de los elementos de entrada */
+
+
+.boton {
+    display: block; /* Convertir en bloque */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 8px 92px; /* Relleno */
+    background-image: linear-gradient(to left, rgb(95, 95, 244), rgb(51, 210, 242)); /* Gradiente de fondo */
+    border-radius: 40px; /* Bordes redondeados */
+    text-decoration: none; /* Sin decoración de texto */
+    color: #001bb3; /* Color de texto */
+    text-transform: capitalize; /* Transformar en mayúsculas */
+}
+
+.forget-password {
+    display: inline-block; /* Establece los elementos como bloques en línea */
+    margin: 5px; /* Agrega espacio entre los elementos */
+    border-radius: 6px;
+}
+
+/* Estilos para el campo de entrada de correo electrónico */
+.inputBox input[type="text"],
+.inputBox input[type="email"],
+.inputBox input[type="password"] {
+    width: 120%; /* Ancho completo */
+    height: 40px; /* Altura del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 0.5px solid #ced4da; /* Borde con color */
+    padding: 10px; /* Relleno interior */
+}
