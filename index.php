@@ -2,7 +2,7 @@
 session_start();
 
 // Incluir el archivo de conexión
-include '../login/crudinmuebles/conexion.php';
+include 'crudinmuebles/conexion.php';
 
 // Verificar si se ha enviado un formulario de inicio de sesión
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
