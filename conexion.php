@@ -1,15 +1,13 @@
 <?php
-// Conexión a la base de datos
-$servername = "localhost";
-$database = "realstate";
-$username = "root";
-$password = "";
+// Definición de los datos de conexión
+$servername="realstate.database.windows.net";
+$database="realstate";
+$username="Aprendiz";
+$password="Andres2004";
 
-// Crear conexión
-$con = new mysqli($servername, $username, $password, $database);
+    $con=  new mysqli("$servername", "$username", "$password", "$database");
 
-// Verificar la conexión
-if ($con->connect_error) {
-    die("FALLA EN LA CONEXION " . $con->connect_error);
-}
+    if($con -> connect_error ) {
+        die("FALLA EN LA CONEXION " . $con -> connect_error) ; 
+    }
 ?>
